@@ -11,7 +11,7 @@ const Pokemon = ({ id }) => {
 
         const fetchData = async () => {
 
-            await fetch(`http://localhost:3001/api/pokedex/${id}`)
+            await fetch(`/api/pokedex/${id}`)
                 .then(async (data) => await data.json())
                 .then((data) => { console.log(data.description.replace(/\n/g, ' ').toString()); setPokemon(data); })
                 .catch(err => console.log(err))

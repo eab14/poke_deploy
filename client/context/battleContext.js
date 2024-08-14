@@ -87,7 +87,7 @@ export const BattleProvider = ({ children }) => {
 
     const get = useCallback(async (url) => {
 
-        const { data, error } = (user) ? useSWR(`http://localhost:3001/api/${url}`, fetcher) : { data: null, error: "No token presented..." };
+        const { data, error } = (user) ? useSWR(`/api/${url}`, fetcher) : { data: null, error: "No token presented..." };
         return { data, error };
 
     }, []);
@@ -112,7 +112,7 @@ export const BattleProvider = ({ children }) => {
         const token = localStorage.getItem('token');
 
         try {
-            const response = await axios.get(`http://localhost:3001/api/battle/grass/${rarity}`, {
+            const response = await axios.get(`/api/battle/grass/${rarity}`, {
                 headers: { Authorization: `Bearer ${token}` }
             });
             return response.data;
@@ -126,7 +126,7 @@ export const BattleProvider = ({ children }) => {
         const token = localStorage.getItem('token');
 
         try {
-            const response = await axios.get(`http://localhost:3001/api/battle/encounter/${pid}`, {
+            const response = await axios.get(`/api/battle/encounter/${pid}`, {
                 headers: { Authorization: `Bearer ${token}` }
             });
             return response.data;
@@ -141,7 +141,7 @@ export const BattleProvider = ({ children }) => {
 
         const token = localStorage.getItem('token');
 
-        axios.get('http://localhost:3001/api/battle/wild', { headers: { Authorization: `Bearer ${token}` } })
+        axios.get('/api/battle/wild', { headers: { Authorization: `Bearer ${token}` } })
             .then(async response => setOpponent(response.data))
             .catch(error => { console.error('Token invalid'); logout(); });
 
@@ -151,7 +151,7 @@ export const BattleProvider = ({ children }) => {
         const token = localStorage.getItem('token');
 
         try {
-            const response = await axios.get(`http://localhost:3001/api/battle/move/${moveId}`, {
+            const response = await axios.get(`/api/battle/move/${moveId}`, {
                 headers: { Authorization: `Bearer ${token}` }
             });
             return response.data;

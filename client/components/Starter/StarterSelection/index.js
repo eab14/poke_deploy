@@ -45,7 +45,7 @@ const StarterSelection = ({ pokemon }) => {
             try {
                 const array = await Promise.all(
                     pokemon.map(async (p) => {
-                        const response = await fetch(`http://localhost:3001/api/pokedex/${p.pokemonId}`);
+                        const response = await fetch(`/api/pokedex/${p.pokemonId}`);
                         const data = await response.json();
                         return data;
                     })

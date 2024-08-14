@@ -25,7 +25,7 @@ const Pokedex = () => {
             
             try {
 
-                const response = await fetch(`http://localhost:3001/api/pokedex?name=${search}`);
+                const response = await fetch(`/api/pokedex?name=${search}`);
                 const data = await response.json();
                 setPokemonList(data);
 
