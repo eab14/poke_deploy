@@ -1,0 +1,10 @@
+[
+    {
+        "username" : "admin",
+        "password" : "root",
+        "admin" : true,
+        "items" : [
+            { "name" : "Pokeball", "quantity" : 5 }
+        ]
+    }
+]

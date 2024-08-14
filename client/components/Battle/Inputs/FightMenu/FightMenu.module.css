@@ -1,0 +1,176 @@
+.fight_menu_spacer {
+    position: relative;
+    width: 100%;
+    height: 180px;
+    background: linear-gradient(#f4f4f4, #ccc);
+    box-sizing: border-box;
+    border: none;
+    border-top: 2px solid #232323;
+    font-family: "pokemon";
+    letter-spacing: 2px;
+    font-size: 10px;
+    color: var(--color_white);
+    -webkit-text-stroke: 3px var(--color_black);
+    paint-order: stroke fill;
+    overflow: hidden;
+}
+
+.move_inputs_spacer {
+    position: relative;
+    width: 100%;
+    height: 70%;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.move_input_button {
+    position: relative;
+    margin: 5px 5px;
+    width: calc(50% - 20px);
+    height: 60px;
+    background: linear-gradient(#eee 50%, #ccc 60%);
+    border-radius: 5px;
+    border: 2px solid #f4f4f4;
+    box-sizing: border-box;
+    outline: 3px solid #232323;
+}
+
+.move_input_text_spacer {
+    width: calc(100% - 14px);
+    height: calc(100% - 6px);
+    background: linear-gradient(#f4f4f4 50%, #ccc 60%);
+    border-radius: 4px;
+    opacity: 1;
+}
+
+.move_input_text_spacer h3 {
+    position: relative;
+    top: 4px;
+    font-family: "pokemon";
+    color: #f4f4f4;
+    -webkit-text-stroke: 2px var(#aaa);
+    paint-order: stroke fill;
+    letter-spacing: 2px;
+    font-size: 12px;
+}
+
+.move_input_text_spacer span {
+    position: relative;
+    margin-top: 6px;
+    top: 4px;
+    justify-content: space-between;
+    width: calc(100% - 50px);
+}
+
+.move_type {
+    width: 80px;
+    height: 20px;
+    margin-right: 15px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    letter-spacing: 3px;
+}
+
+.move_pp {
+    color: black;
+    -webkit-text-stroke: 1px;
+    paint-order: normal;
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 12px;
+}
+
+.normal {
+    background: linear-gradient(#eee 50%, #ccc 60%);
+  }
+  
+  .psychic {
+    background: linear-gradient(#bb4e60 50%, #942d3e 60%);
+  }
+  
+  .electric {
+    background: linear-gradient(#eded62 50%, #cbcb14 60%);
+  }
+  
+  .dragon {
+    background: linear-gradient(#6c43e7 50%, #3511a0 60%);
+  }
+  
+  .fire {
+    background: linear-gradient(#f08030 50%, #d03000 60%);
+  }
+  
+  .water {
+    background: linear-gradient(#6890f0 50%, #386ceb 60%);
+  }
+  
+  .grass {
+    background: linear-gradient(#78c850 50%, #4e8234 60%);
+  }
+  
+  .ice {
+    background: linear-gradient(#98d8d8 50%, #63c6c6 60%);
+  }
+  
+  .fighting {
+    background: linear-gradient(#c03028 50%, #7d1f1a 60%);
+  }
+  
+  .poison {
+    background: linear-gradient(#a040a0 50%, #682a68 60%);
+  }
+  
+  .ground {
+    background: linear-gradient(#e0c068 50%, #d8a033 60%);
+  }
+  
+  .flying {
+    background: linear-gradient(#a890f0 50%, #705898 60%);
+  }
+  
+  .bug {
+    background: linear-gradient(#a8b820 50%, #6d7815 60%);
+  }
+  
+  .rock {
+    background: linear-gradient(#b8a038 50%, #786824 60%);
+  }
+  
+  .ghost {
+    background: linear-gradient(#705898 50%, #493963 60%);
+  }
+  
+  .dark {
+    background: linear-gradient(#705848 50%, #49392f 60%);
+  }
+  
+  .steel {
+    background: linear-gradient(#b8b8d0 50%, #787887 60%);
+  }
+  
+  .fairy {
+    background: linear-gradient(#ee99ac 50%, #d685ad 60%);
+  }
+  
+
+.cancel_button {
+    position: absolute;
+    bottom: -4px;
+    width: 70%;
+    height: 30px;
+    background: linear-gradient(#1d5de7 50%, #1746ab 60%);
+    justify-self: center;
+    align-self: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border: 2px solid #f4f4f4;
+    outline: 3px solid #232323;
+}
+
+.inactive {
+    opacity: 0.3!important;
+}
+
+.selected {
+    outline: 3px solid red!important;
+}
